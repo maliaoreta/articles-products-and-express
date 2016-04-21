@@ -1,0 +1,4 @@
+DROP USER IF EXISTS 'yourUserName';
+CREATE USER 'yourUserName' PASSWORD 'yourPassword';
+DROP DATABASE IF EXISTS 'articles_and_products';
+CREATE DATABASE 'articles_and_products';

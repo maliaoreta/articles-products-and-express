@@ -2,8 +2,11 @@ var express = require('express'),
     app = express(),
     productsRoute = require('./routes/products.js'),
     articlesRoute = require('./routes/articles.js'),
-    bodyParser = require('body-parser');
+    bodyParser = require('body-parser'),
+    pgp = require('pg-promise')(),
+    dbConn = require('./config.json');
 
+var db = pgp(dpConn);
 
 var methodOverride = require('method-override');
 
